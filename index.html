@@ -1,0 +1,101 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Прогноз погоди в Україні</title>
+        <!--stylesheet-->
+        <link href="index.css" rel="stylesheet" type="text/css">
+    </head>
+    
+        <body data-pinterest-extension-installed="cr1.39.1">
+       
+    
+            <div id="wrapper">
+                <img src="images/karta.png" height="150px" width="250px" hspace="80px" margin top="40px" alt="logo">
+            <div id="cloud">    
+                <img src="images/cloud3.png" height="250px" width="750 px" hspace="80px" alt="cloud3">
+            </div>
+            </div>    
+            <div id="header">
+                
+            <h1>Прогноз погоди в <font color="#FFD700">Україні.</font></h1>
+            </div>
+    
+     <form div id="formCity">
+            <label for="cityName">Mісце: 
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAA/ElEQVQ4T52SAW0CQRRE3ykABy0O6oCgAKoAqqBFQYsC6oDWASgAB9QB4IAqoJlm9zL777gQNrlc9s/s7J/5W9G+3oAp8JTgNaDvO9KrUOgDWzsY+V/AixejgG4ZX+kqlxfAR964wCNwsMOnRFRXsvSQsDMwAPTHBURamsAI2KW9stgbJhuyUwiorXcjRXsXw2obTpoBKyPNgc+0j9hzmkrRgbwegZ6JKFStidV+AeXVyEAc3fh67xR0rq0L19NkFOj/7THEXIt+XaD23iUgTOMbBiubkMXVDgTEuRfBuXCctWP+Lorne6uAAv1JZI2tdXV1kOevxPOTboj8AY3/LBEarih2AAAAAElFTkSuQmCC"/>
+            </label>
+            
+            <input id= "inputCityName" type="text" name="cityName"/>
+            <input type="button" id="btnGetWeather" value="Пошук"/>
+            
+             
+       </form> 
+             <p><span id="location"> </span></p>
+      </div >
+      
+      <div id="full_content"
+   <p>
+<div id="content_header">Сьогодні
+  <ul>
+  <span id="dateToday"></span>
+  </ul>
+  <ul>
+     <span id="iconToday"></span>
+     <span id="iconToday"></span>
+  </ul>
+  <ul>
+	  Min <span id="tempTodayMin"></span>C&deg
+  </ul>
+  <ul>
+	  Max <span id="tempTodayMax"></span>C&deg
+  </ul> 
+</div>
+</p>
+<p>
+<div id="content_header">Завтра
+   <ul>
+   <span id="dateTomorrow"></span>
+   </ul>
+   <ul>
+     <span id="iconTomorrow"></span>
+   </ul>
+  <ul>
+    Min <span id="tempTomorrowMin"></span>C&deg
+  </ul>
+  <ul>
+	Max <span id="tempTomorrowMax"></span>C&deg
+  </ul>
+</div>
+</p>
+<p>
+  <div id="content_header">Післязавтра
+   <ul>
+   <span id="dateAfterTomorrow"></span>
+   </ul>
+   <ul>
+     <span id="iconAfterTomorrow"></span>
+   </ul>
+  <ul>
+    Min <span id="tempAfterTomorroMin"></span>C&deg
+  </ul>
+  <ul>
+	Max <span id="tempAfterTomorrowMax"></span>C&deg
+  </ul>
+</div>
+</p>
+
+
+<p id="error"></p>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<script type="text/javascript" src="script/moment.js"></script>
+        <script type="text/javascript" src="script/WeatherService.js"></script>
+        <script type="text/javascript" src="script/WeatherByCity.js"></script>
+        <script type="text/javascript" src="script/moment-with-locales.min.js"></script>
+		<script type="text/javascript" src="script/script.js"></script>
+        
+    </body>        
+    </html>
+    
+ 
